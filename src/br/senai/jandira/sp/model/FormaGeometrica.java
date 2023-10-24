@@ -6,16 +6,38 @@ public class FormaGeometrica {
     private double lado2;
     private double resultadoarea;
     private double resultadoperimetro;
+    private double raio;
 
-    public void calcularArea(){
+    public void criarRetangulo(double lado1,double lado2){
 
-        resultadoarea = lado1 * lado2;
+        setLado1(lado1);
+        setLado2(lado2);
+        System.out.println("Retangulo Criado com o lado 1 de : " + getLado1() + " e lado 2 de :" + getLado2());
 
     }
+
+    public void criarCirculo(double raio){
+
+        setRaio(raio);
+        System.out.println("Circulo criado com o raio de: " + getRaio());
+
+
+    }
+
+    public void calcularArea() {
+    }
+
     public void calcularPerimetro(){
 
-        resultadoperimetro = (lado1 * 2) + (lado2 * 2);
+    }
 
+
+    public double getRaio() {
+        return raio;
+    }
+
+    public void setRaio(double raio) {
+        this.raio = raio;
     }
 
     public double getLado1() {
